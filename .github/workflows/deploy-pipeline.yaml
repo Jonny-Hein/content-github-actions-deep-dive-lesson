@@ -82,7 +82,7 @@ jobs:
       - name: create doc folder 
         run: mkdir docs
       - name: markdown html convert
-        uses: docker://pandadoc/core:2.9
+        uses: docker://pandoc/core:2.9
         with: 
           args: userguide.md -t html -o docs/index.html
       - name: deploy site
